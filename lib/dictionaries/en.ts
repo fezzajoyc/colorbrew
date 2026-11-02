@@ -4,7 +4,7 @@ const en = {
   brand: "ColorBrew",
   tagline: "Color tools that run in your browser.",
   metaDesc:
-    "Free color tools for designers and developers: gradients, WCAG contrast, palettes, converters and color-blindness simulation. Everything runs in your browser — nothing you enter leaves your device.",
+    "Free color tools: gradients, WCAG contrast, palettes, converters and color-blindness simulation. Everything runs in your browser — nothing leaves your device.",
 
   nav: {
     tools: "All tools",
