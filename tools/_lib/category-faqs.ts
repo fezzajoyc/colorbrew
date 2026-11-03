@@ -10,74 +10,29 @@ type Faq = { q: string; a: string };
 
 const GLOBAL: Partial<Record<Locale, Faq[]>> = {
   en: [
-    {
-      q: "Is this tool free to use?",
-      a: "Yes, completely free — no signup, no subscription, no daily limits, and no watermarks on the output.",
-    },
-    {
-      q: "Does my data leave my device?",
-      a: "No. The tool runs entirely in your browser with JavaScript. Nothing you type or upload is sent to a server, so it even works offline once the page has loaded.",
-    },
-    {
-      q: "Which browsers does it work in?",
-      a: "Any modern browser — Chrome, Firefox, Safari and Edge on desktop and mobile. No plugins or extensions are needed.",
-    },
+    { q: "Do I need design software for ColorBrew?", a: "No. ColorBrew's color work tools run in any modern browser with no plugins, no installs and no accounts — open the page and start working." },
+    { q: "Are the colors and values exact?", a: "Yes — color work math follows the WCAG specifications and standard color-space formulas, computed locally with full precision rather than rounded lookup tables." },
+    { q: "Can I use ColorBrew offline?", a: "Once the page has loaded, yes. All color work processing is local JavaScript, so an interrupted connection does not interrupt your work." },
   ],
   zh: [
-    {
-      q: "这个工具免费吗?",
-      a: "完全免费 — 无需注册、没有订阅、无每日限额,输出不带水印。",
-    },
-    {
-      q: "我的数据会传到服务器吗?",
-      a: "不会。工具完全在浏览器里用 JavaScript 运行,输入的文件和内容不会发送到任何服务器;页面加载后断网也能用。",
-    },
-    {
-      q: "支持哪些浏览器?",
-      a: "所有现代浏览器 — Chrome、Firefox、Safari、Edge,桌面和移动端通用,无需安装插件。",
-    },
+    { q: "需要装设计软件吗?", a: "不需要。ColorBrew的色彩工具在任何现代浏览器里运行,无插件、无安装、无账号 — 打开页面就能干活。" },
+    { q: "颜色和数值精确吗?", a: "精确 — 色彩计算遵循 WCAG 规范和标准色彩空间公式,本地全精度计算,不是四舍五入的查表。" },
+    { q: "离线能用吗?", a: "页面加载后可以。所有色彩处理都是本地 JavaScript,断网不影响手头的工作。" },
   ],
   ja: [
-    {
-      q: "このツールは無料ですか?",
-      a: "完全無料です。登録・課金・回数制限はなく、出力にウォーターマークも入りません。",
-    },
-    {
-      q: "入力したデータは外部に送信されますか?",
-      a: "送信されません。すべてブラウザ内の JavaScript で処理されるため、入力・ファイルはサーバーに送られず、読み込み後はオフラインでも動作します。",
-    },
-    {
-      q: "対応ブラウザは?",
-      a: "Chrome / Firefox / Safari / Edge の最新版(デスクトップ・モバイル共通)。プラグインや拡張機能は不要です。",
-    },
+    { q: "デザインソフトが必要ですか?", a: "不要です。ColorBrewのcolor workツールは最新のブラウザがあれば動きます。プラグイン・インストール・アカウント一切なしで、ページを開けば作業開始です。" },
+    { q: "色や数値は正確ですか?", a: "正確です。color workの計算は WCAG 仕様と標準の色空間公式に従い、丸めた換算表ではなくローカルで全精度計算します。" },
+    { q: "オフラインで使えますか?", a: "ページ読み込み後は可能です。color work処理はすべてローカル JavaScript のため、回線が途切れても作業は止まりません。" },
   ],
   es: [
-    {
-      q: "¿Esta herramienta es gratis?",
-      a: "Sí, totalmente gratis: sin registro, sin suscripción, sin límites diarios y sin marcas de agua.",
-    },
-    {
-      q: "¿Mis datos salen de mi dispositivo?",
-      a: "No. Todo se procesa con JavaScript en tu navegador; nada se envía a un servidor. Incluso funciona sin conexión una vez cargada la página.",
-    },
-    {
-      q: "¿En qué navegadores funciona?",
-      a: "Cualquier navegador moderno: Chrome, Firefox, Safari y Edge, en escritorio y móvil. Sin plugins ni extensiones.",
-    },
+    { q: "¿Necesito software de diseño para ColorBrew?", a: "No. Las herramientas de color work de ColorBrew funcionan en cualquier navegador moderno, sin plugins, sin instalaciones y sin cuentas — abre la página y empieza." },
+    { q: "¿Los colores y valores son exactos?", a: "Sí — el cálculo de color work sigue las especificaciones WCAG y las fórmulas estándar de espacio de color, con precisión completa y local, sin tablas redondeadas." },
+    { q: "¿Puedo usar ColorBrew sin conexión?", a: "Sí, una vez cargada la página. Todo el procesado de color work es JavaScript local, así que una conexión interrumpida no interrumpe tu trabajo." },
   ],
   pt: [
-    {
-      q: "Esta ferramenta é gratuita?",
-      a: "Sim, totalmente gratuita — sem cadastro, sem assinatura, sem limites diários e sem marcas d'água.",
-    },
-    {
-      q: "Meus dados saem do dispositivo?",
-      a: "Não. A ferramenta roda inteiramente no seu navegador com JavaScript; nada é enviado a servidores e funciona até offline depois de carregada.",
-    },
-    {
-      q: "Quais navegadores são suportados?",
-      a: "Qualquer navegador moderno — Chrome, Firefox, Safari e Edge, no desktop e no celular. Nenhum plugin necessário.",
-    },
+    { q: "Preciso de software de design para o ColorBrew?", a: "Não. As ferramentas de color work do ColorBrew rodam em qualquer navegador moderno, sem plugins, sem instalação e sem contas — abra a página e comece." },
+    { q: "As cores e os valores são exatos?", a: "Sim — o cálculo de color work segue as especificações WCAG e fórmulas padrão de espaço de cor, com precisão total e local, sem tabelas arredondadas." },
+    { q: "Posso usar o ColorBrew offline?", a: "Sim, depois de carregada a página. Todo o processamento de color work é JavaScript local, então uma conexão instável não interrompe seu trabalho." },
   ],
 };
 
