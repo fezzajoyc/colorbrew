@@ -11,18 +11,14 @@ import { Icon } from "./icons";
 /** 工具页挂载时记录最近使用(首页"最近使用"条数据源)。 */
 export function RecentTracker({
   slug,
-  name,
   icon,
-  locale,
 }: {
   slug: string;
-  name: string;
   icon: string;
-  locale: string;
 }) {
   useEffect(() => {
-    trackRecent({ slug, name, icon });
-  }, [slug, name, icon]);
+    trackRecent({ slug, icon });
+  }, [slug, icon]);
   return null;
 }
 
@@ -46,11 +42,11 @@ export function ToolEmbedBox({
   locale: string;
   labels: { title: string; desc: string; copied: string; copy: string };
 }) {
-  const code = `<iframe src="${SITE.domain}/${locale}/tools/${slug}?embed=1" width="100%" height="640" style="border:0;border-radius:16px" title="ColorBrew — ${slug}" loading="lazy"></iframe>`;
+  const code = `<iframe src="${SITE.domain}/${locale}/tools/${slug}?embed=1" width="100%" height="640" style="border:0;border-radius:16px" title="Zoyku — ${slug}" loading="lazy"></iframe>`;
   return (
     <div className="rounded-2xl border hairline bg-[var(--color-surface)] p-5">
       <div className="flex items-start gap-3">
-        <span className="inline-flex rounded-xl bg-[var(--color-card)] p-2.5 text-[var(--color-accent)]">
+        <span className="inline-flex rounded-xl bg-white p-2.5 text-[var(--color-accent)]">
           <Icon name="code" size={18} />
         </span>
         <div>
@@ -58,7 +54,7 @@ export function ToolEmbedBox({
           <p className="mt-1 text-[13.5px] leading-5 text-[var(--color-sub)]">{labels.desc}</p>
         </div>
       </div>
-      <div className="mt-3 rounded-xl border hairline bg-[var(--color-card)] p-3">
+      <div className="mt-3 rounded-xl border hairline bg-white p-3">
         <code className="mono block overflow-x-auto whitespace-nowrap text-[11.5px] leading-5">
           {code}
         </code>
