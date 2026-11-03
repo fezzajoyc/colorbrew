@@ -18,6 +18,10 @@ const tr = {
     heroSub:
       "ColorBrew renk uzmanının seti: degradeler, kontrast kontrolleri, paletler, dönüştürücüler ve renk körlüğü simülasyonu. Hepsi tarayıcında — hızlı, ücretsiz, kayıt yok, yükleme yok.",
     browseAll: "Tüm araçlara göz at",
+    pinned: "Sabitlenen",
+    pin: "Üste sabitle",
+    unpin: "Sabitlemeyi kaldır",
+    popular: "Şu anda popüler",
     categoriesTitle: "Kategoriler",
     featuredTitle: "Popüler araçlar",
     trustLocal: "Renklerin cihazında kalır",
@@ -76,6 +80,8 @@ const tr = {
     howTo: "Nasıl kullanılır",
     faq: "Sık sorulan sorular",
     related: "İlgili araçlar",
+    nextStep: "Sonraki adımlar",
+    copyLink: "Bağlantıyı kopyala",
     privacyNote:
       "Bu araç tamamen tarayıcında çalışır. Verilerin asla cihazından çıkmaz — hiçbir sunucuya yüklenmez.",
     inCategory: "{category} kategorisinde daha fazlası",

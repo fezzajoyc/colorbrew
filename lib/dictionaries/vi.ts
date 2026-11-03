@@ -19,6 +19,10 @@ const vi = {
     heroSub:
       "ColorBrew là bộ đồ nghề của chuyên gia màu: gradient, kiểm tra tương phản, bảng màu, bộ chuyển đổi và mô phỏng mù màu. Tất cả trong trình duyệt — nhanh, miễn phí, không đăng ký, không tải lên.",
     browseAll: "Xem tất cả công cụ",
+    pinned: "Đã ghim",
+    pin: "Ghim lên đầu",
+    unpin: "Bỏ ghim",
+    popular: "Phổ biến ngay bây giờ",
     categoriesTitle: "Danh mục",
     featuredTitle: "Công cụ phổ biến",
     trustLocal: "Màu luôn ở lại thiết bị của bạn",
@@ -77,6 +81,8 @@ const vi = {
     howTo: "Cách sử dụng",
     faq: "Câu hỏi thường gặp",
     related: "Công cụ liên quan",
+    nextStep: "Bước tiếp theo",
+    copyLink: "Sao chép liên kết",
     privacyNote:
       "Công cụ này chạy hoàn toàn trong trình duyệt của bạn. Dữ liệu không bao giờ rời khỏi thiết bị — không được tải lên bất kỳ máy chủ nào.",
     inCategory: "Xem thêm trong {category}",
