@@ -43,7 +43,7 @@ export function Tabs({
           onClick={() => onChange(o.id)}
           className={`rounded-full border px-3.5 py-1.5 text-[13px] font-medium transition-colors ${
             value === o.id
-              ? "border-transparent bg-[var(--color-ink)] text-white"
+              ? "border-transparent bg-[var(--color-ink)] text-white dark:bg-white dark:text-[#1d1d1f]"
               : "hairline hover:bg-[var(--color-surface)]"
           }`}
         >
